@@ -364,6 +364,89 @@ function dynamicdropdown(listindex)
         </div>
     </div>
 </section>
+	    <section id="about">
+	<div class="section-content">
+		<div class="container">
+      <div class="row">
+      <div class="col-md-6">
+        <img src="https://lh3.googleusercontent.com/-_1GalXmNI3M/XSmBWFIV16I/AAAAAAAAAxM/nC7vL_AINZQ3LWGXPD4FC0sdJcU3cFQGQCEwYBhgL/w140-h78-p/sky.jpg" height="100%" width="100%">
+      </div>
+			<div class="col-md-6">
+				<div class="form-popup">
+  <form action="form_action.php" method="POST" class="form-container">
+    <h1 class="text-center">Service Form</h1>
+    <input type="text" placeholder="Full Name" name="name" required><br><br>
+    <input type="text" placeholder="Contact Number" name="phone" required><br><br>
+    <input type="text" placeholder="Email" name="email" required><br><br>
+
+    <div class="category_div" id="category_div">
+            <select name="stype" class="required-entry" id="category" onchange="javascript: dynamicdropdown(this.options[this.selectedIndex].value);">
+                <option value="">Service Type</option>
+                <option value="Hair">Hair</option>
+                <option value="Skin & Beauty">Skin & Beauty</option>
+                <option value="Beauty Wellness">Beauty Wellness</option>
+                <option value="Hand & Foot Spa">Hand & Foot Spa</option>
+                <option value="Bride & Groom">Bride & Groom</option>
+            </select>
+        </div><br>
+        <div class="sub_category_div" id="sub_category_div">
+                <select name="sname" id="subcategory" >
+                    <option value="">Service Name</option>
+                </select>
+        </div><br>
+
+    <center><button type="submit" class="btn col-md-3">Submit</button></center>
+  </form>
+</div>
+
+<script>
+function dynamicdropdown(listindex)
+    {
+     document.getElementById("subcategory").length = 0;
+      switch (listindex)
+                    {
+                      case "Hair" :
+                        document.getElementById("subcategory").options[0]=new Option("Select Service Name","");
+                        document.getElementById("subcategory").options[1]=new Option("HairCut","HairCut");
+                        document.getElementById("subcategory").options[2]=new Option("Hair Stylling","Hair Stylling");
+                        document.getElementById("subcategory").options[3]=new Option("Hair Colour","Hair Colour");
+                        document.getElementById("subcategory").options[4]=new Option("Hair Treatment","Hair Treatment");
+                        break;
+                    
+                    case "Skin & Beauty" :
+                        document.getElementById("subcategory").options[0]=new Option("Select Service Name","");
+                        document.getElementById("subcategory").options[1]=new Option("CleanUp","CleanUp");
+                        document.getElementById("subcategory").options[2]=new Option("SkinCare or Treatment","Skincare or Treatment");
+                        document.getElementById("subcategory").options[3]=new Option("Scientific SkinCare","Scientific SkinCare");
+                        document.getElementById("subcategory").options[4]=new Option("Darmazone or Treatment","Darmazone or Treatment");
+                        break;
+                    case "Beauty Wellness" :
+                        document.getElementById("subcategory").options[0]=new Option("Select Service Name","");
+                        document.getElementById("subcategory").options[1]=new Option("Skin Polishing","Skin Polishing");
+                        document.getElementById("subcategory").options[2]=new Option("Skin Polish Anti Aging","Skin Polish Anti Aging");
+                        break;
+                    case "Hand & Foot Spa" :
+                        document.getElementById("subcategory").options[0]=new Option("Select Service Name","");
+                        document.getElementById("subcategory").options[1]=new Option("Manicure","Manicure");
+                        document.getElementById("subcategory").options[2]=new Option("Padicure","Padicure");
+                        document.getElementById("subcategory").options[3]=new Option("Heal Peal Treatment","Heal Peal Treatment");
+                        break;
+
+                        case "Bride & Groom" :
+                        document.getElementById("subcategory").options[0]=new Option("Select Service Name","");
+                        document.getElementById("subcategory").options[1]=new Option("MakeUp","MakeUp");
+                        document.getElementById("subcategory").options[2]=new Option("Saree Drape or Lehanga","Saree Drape or Lehanga");
+                        document.getElementById("subcategory").options[3]=new Option("PreBride & PreGroom","PreBride & PreGroom");
+                        break;
+                }
+                return true;
+            }
+</script>
+			</div>
+    </div>
+		</div>
+	</div>
+</section>
     </main>
 </div>
 	
