@@ -28,11 +28,11 @@
   margin-left:200px;
   background-color: white;
 }
- input{
+ .s{
     width: 100%;
      padding: 8px;
 }
-input:hover{
+.s:hover{
     border: 2px solid #000;
 }
 select{
@@ -272,9 +272,9 @@ select:hover{
 				<div class="form-popup" id="amisha">
   <form action="form_action.php" method="POST" class="form-container">
     <p><strong>Service Form</strong></p>
-    <input type="text" placeholder="Full Name" name="name" required><br><br>
-    <input type="text" placeholder="Contact Number" name="phone" required><br><br>
-    <input type="text" placeholder="Email" name="email" required><br><br>
+    <input class="s" type="text" placeholder="Full Name" name="name" required><br><br>
+    <input class="s" type="text" placeholder="Contact Number" name="phone" required><br><br>
+    <input class="s" type="text" placeholder="Email" name="email" required><br><br>
 
     <div class="category_div" id="category_div">
             <select name="stype" class="required-entry" id="category" onchange="javascript: dynamicdropdown(this.options[this.selectedIndex].value);">
@@ -357,9 +357,9 @@ function dynamicdropdown(listindex)
 		    <div class="form-popup">
   <form action="form_action.php" method="POST" class="form-container">
     <p><strong>Service Form</strong></p>
-    <input type="text" placeholder="Full Name" name="name" required><br><br>
-    <input type="text" placeholder="Contact Number" name="phone" required><br><br>
-    <input type="text" placeholder="Email" name="email" required><br><br>
+    <input class="s" type="text" placeholder="Full Name" name="name" required><br><br>
+    <input class="s" type="text" placeholder="Contact Number" name="phone" required><br><br>
+    <input class="s" type="text" placeholder="Email" name="email" required><br><br>
 
     <div class="category_div" id="category_div">
             <select name="stype" class="required-entry" id="category" onchange="javascript: dynamicdropdown(this.options[this.selectedIndex].value);">
